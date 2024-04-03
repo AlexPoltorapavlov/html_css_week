@@ -6,12 +6,12 @@
 	<title>Главная</title>
 </head>
 <body>
-	<header> <!-- Задает «шапку» веб-страницы или раздела -->
-		<h6>Инвестиционно-финансовая компания</h6>
-		<nav>
-			<ul>
+	<header>
+		<nav class="header-nav">
+			<h6 class="header-nav__home-page">Инвестиционно-финансовая компания</h6>
+			<ul class="header-nav__links">
 				<li>
-					<img src="#">
+					<img src="#" alt="" class="header-nav__location_img">
 					<a href="#">Город  Казань</a>
 				</li>
 				<li><a href="#">О компании</a></li>
@@ -21,42 +21,40 @@
 				<li><a href="#">Наши партнеры</a></li>
 				<li><a href="#">Сотрудничество</a></li>
 			</ul>
-			<h6>RU</h6>
+			<h6 class="header-nav__language">RU</h6>
 		</nav>
 	</header>
-	<nav> 
-		<img src="#">
-		<ul>
+	<nav class="nav"> 
+		<img src="#" alt="" class="nav__logo">
+		<ul class="nav__links">
 			<li>Инвестиции</li>
 			<li>Рассрочка</li>
 			<li>Калькулятор</li>
 		</ul>
-		<ul>
-			<li>
-				<img src="#">
-				8 800 2700 700
-			</li>
-		</ul>
-		<img src="#">
-		<ul>
-			<li><a href="#">Личный Кабинет</a></li>
-			<li><a href="#">Онлайн-заявка</a></li>
+		<div class="nav__phone">
+			<img src="#" alt="" class="nav__phone-img">
+			<span class="nav__phone-number">800 2700 700</span> 
+		</div>
+		<img src="#" alt="" class="nav__search">
+		<ul class="nav__buttons">
+			<li><a href="#" class="nav__button nav__button-personal-area">Личный Кабинет</a></li>
+			<li><a href="#" class="nav__button nav__button-online-application">Онлайн-заявка</a></li>
 		</ul>
 	</nav>
 	<main> 
-		<section> 
-			<article> 
-				<h1>Инвестируйте с повышенной доходностью до <span>19%</span> годовых</h1>
-				<p>100% обеспеченность активами, прибыль каждые 3 месяца!</p>
-				<div>
+		<section class="hot-news"> 
+			<article class="hot-news-content"> 
+				<h1 class="hot-news-content__h1">Инвестируйте с повышенной доходностью до <span>19%</span> годовых</h1>
+				<p class="hot-news-content__description">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
+				<div class="hot-news-buttons">
 					<ul>
-						<li><a href="#">Инвестировать</a></li>
-						<li><a href="#">Подробнее</a></li>
-						<li><img src="#" class="slide_status"></li>
+						<li><a href="#" class="hot-news-buttons__invest-link">Инвестировать</a></li>
+						<li><a href="#" class="hot-news-buttons__more-details-link">Подробнее</a></li>
+						<li><img src="#" class="hot-news-buttons__slidebar-img"></li>
 					</ul>
 				</div>
 			</article>
-			<img src="#" alt="" class="slide_bar">
+			<img src="#" alt="" class="hot-news__slidebar">
 		</section>
 	</main>
 </body>
