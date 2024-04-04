@@ -1,0 +1,201 @@
+a {
+	font-size: 14px;
+	font-style: ubuntu;
+}
+
+body {
+	background-color: #F0F4F8;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+
+	max-width: 1275px;
+}
+
+.header-up-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #CBD8E9;
+
+	padding: 18px 0;
+}
+
+.header-up-nav a{
+	text-decoration: none;
+	color: #6E9BB8;
+
+	font-size: 12px;
+}
+
+.header-down-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+
+	padding: 20px 0 0 0;
+}
+
+.header-down-nav a {
+	text-decoration: none;
+	color: #0000DE;
+
+	font-size: 18px;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	align-items: center;
+}
+
+.header-nav__home-page {
+	margin-right: 68px;
+}
+
+.header-nav__location {
+	margin-right: 60px;
+	padding-left: 22px;
+
+	background-image: url(sources/location.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.header-nav__links {
+	display: flex;
+
+	justify-content: space-between;
+	margin: 0 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.header-nav__link {
+	margin-right: 24px;
+}
+
+.header-nav__link.contacts {
+	padding-right: 22px;
+	margin-right: 0px;
+
+	background-image: url(sources/map.svg);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.header-nav__language {
+	background-color: #FFFFFF;
+	text-decoration: none;
+
+	border-radius: 2px;
+
+	padding: 4px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+
+	flex: 2;
+}
+
+.nav a {
+
+}
+
+.nav__links {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.nav__links li {
+	display: inline-block;
+	margin: auto 28px auto 0;
+	padding: 0;
+}
+
+.nav-link__calc {
+	margin: auto 0px;
+}
+
+.nav__phone {
+	display: flex;
+	margin: auto 0;
+}
+
+.nav__phone-number {
+	font-size: 16px;
+	font-weight: bold;
+	color: #0000DE;
+}
+
+.header-down__buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	flex: 1;
+}
+
+.nav__search {
+	margin: auto 16px;
+}
+
+.nav__buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0px;
+	align-items: center	;
+	list-style-type: none;
+
+	width: 100%;
+}
+
+.nav_buttons li {
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav__button {
+	background: #0000DE;
+	border-radius: 20px 0px;
+	height: 100%;
+	width: 100%;
+	padding: 14px 0px;
+	border: none;
+	align-items: center;
+}
+
+.nav__button a {
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__button-personal-area a{
+	color: #FFFFFF;
+}
+
+.nav__button-online-application {
+	background-color: #FFFFFF;
+}
+
+.nav__button-online-application a{
+	color: #0000DE;
+}
