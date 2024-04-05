@@ -421,11 +421,11 @@ main {
 	justify-content: space-between;
 }
 
-.long-block-content {
+.block-content {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-
+	justify-content: space-between;
 	padding: 40px;
 	padding-top: 32px;
 }
@@ -452,11 +452,9 @@ main {
 .recommend-short-block {
 	grid-column: span 1;
 	grid-row: span 1;
-
-  padding: 20px;
 }
 
-.long-block-content__info {
+.block-content__info {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
