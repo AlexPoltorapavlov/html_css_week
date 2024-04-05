@@ -406,7 +406,7 @@ main {
 .recommended-block {
 	background-color: #F0F4F8;
 	border-radius: 6px;
-
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -415,7 +415,6 @@ main {
 .recommend-long-block-1 {
   grid-column: 1 / span 2;
 	grid-row: 1 / span 1;
-  padding: 20px;
 
 	display: flex;
 	flex-direction: row;
@@ -432,7 +431,15 @@ main {
 }
 
 .recommend-content__img {
+	position: relative;
 	flex: 1;
+}
+
+.recommend-content__img img{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	right: 0;
 }
 
 .recommend-long-block-2 {
@@ -470,6 +477,9 @@ main {
 	margin: 26px 0;
 }
 
+.recommend-buttons {
+	height:fit-content;
+}
 
 .recommend-buttons a {
 	font-size: 14px;
