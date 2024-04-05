@@ -235,7 +235,7 @@ header {
 	justify-content: flex-start
 }
 
-.hot-news-buttons__buttons {
+.hot-buttons {
 	display: flex;
 	justify-content: space-between;
 	padding: auto 0;
@@ -248,11 +248,11 @@ header {
 	width: 50%;
 }
 
-.hot-news-button {
+.hot-button {
 	background: #0000DE;
 	border-radius: 20px 0px;
 	width: 100%;
-	padding: 14px 0px;
+	padding: 14px 14px;
 	margin-right: 20px;
 	border: none;
 	text-align: center;
@@ -261,13 +261,14 @@ header {
 	text-decoration: none;
 }
 
-.hot-news-button.invest-button {
+.invest-button {
 	color: #FFFFFF;
 }
 
-.hot-news-button.more-about-button {
+.more-about-button {
 	color: #0000DE;
 	background-color: #FFFFFF;
+	padding: 14px 20px;
 }
 
 .hot-news-buttons__slidebar {
@@ -367,7 +368,7 @@ header {
 	height: 365px;
 }
 
-/* recomend */
+/* recommend */
 
 main {
 	display: flex;
@@ -377,43 +378,41 @@ main {
 	max-width: 1275px;
 }
 
-.recomend h1 {
+.recommend h1 {
 	font-size: 34px;
 	font-weight: lighter;
 
 	margin-bottom: 30px;
 }
 
-.recomend-content {
+.recommend-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 16px;
 }
 
-.recomend-content h3 {
+.recommend-content h3 {
 	margin: 0;
 	font-size: 14px;
 	color: #79A6C3;
 }
 
-.recomend-content h2 {
+.recommend-content h2 {
 	font-size: 24px;
 	font-weight: bold;
 }
 
-.recomended-block {
+.recommended-block {
 	background-color: #F0F4F8;
 	border-radius: 6px;
 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 40px;
-	padding-top: 32px;
 }
 
-.recomend-long-block-1 {
+.recommend-long-block-1 {
   grid-column: 1 / span 2;
 	grid-row: 1 / span 1;
   padding: 20px;
@@ -423,19 +422,27 @@ main {
 	justify-content: space-between;
 }
 
-.long-block-content-1 {
+.long-block-content {
 	display: flex;
 	flex-direction: column;
+	flex: 1;
+
+	padding: 40px;
+	padding-top: 32px;
 }
 
-.recomend-long-block-2 {
+.recommend-content__img {
+	flex: 1;
+}
+
+.recommend-long-block-2 {
 	grid-column: 2 / span 2;
 	grid-row: 2 / span 1;
 
   padding: 20px;
 }
 
-.recomend-short-block {
+.recommend-short-block {
 	grid-column: span 1;
 	grid-row: span 1;
 
@@ -452,10 +459,26 @@ main {
 	color: #355DFB;
 	font-size: 36px;
 	font-weight: bold;
+	padding-bottom: 14px;
+	margin: 0;
 }
 
-.recomend-content__desc {
+.recommend-content__desc {
 	font-size: 16px;
 	font-weight: lighter;
 	color: #6E9BB8;
+	margin: 26px 0;
+}
+
+
+.recommend-buttons a {
+	font-size: 14px;
+}
+
+.digital-info__desc {
+	margin: 0;
+}
+
+.digital-info__block {
+	flex: 1;
 }
