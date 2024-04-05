@@ -7,6 +7,8 @@ body {
 	background-color: #F0F4F8;
 }
 
+/* Header */
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -168,7 +170,6 @@ header {
 	height: 100%;
 	display: flex;
 	align-items: center;
-
 }
 
 .nav__button {
@@ -194,8 +195,153 @@ header {
 
 .nav__button-online-application {
 	background-color: #FFFFFF;
+	margin-left: 16px;
 }
 
 .nav__button-online-application a{
 	color: #0000DE;
+}
+
+/* hot-news */
+
+
+.hot-news {
+	display: flex;
+	flex-direction: row;
+	margin: 100px auto 0px auto;
+
+	max-width: 1275px;
+}
+
+.hot-news-content {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.hot-news-content__h1 {
+	font-size: 44px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.hot-news__important-span {
+	color: #0000DE;
+}
+
+.hot-news-content__description {
+	font-size: 18px;
+	font-weight: lighter;
+	padding: 5px 0 30px 0;
+	margin: 0;
+}
+
+.hot-news-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start
+}
+
+.hot-news-buttons__buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: auto 0;
+	margin: 0;
+	align-items: center	;
+	list-style-type: none;
+	flex-direction: row;
+
+	height: 100%;
+	width: 50%;
+}
+
+.hot-news-button {
+	background: #0000DE;
+	border-radius: 20px 0px;
+	width: 100%;
+	padding: 14px 0px;
+	margin-right: 20px;
+	border: none;
+	text-align: center;
+
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.hot-news-button.invest-button {
+	color: #FFFFFF;
+}
+
+.hot-news-button.more-about-button {
+	color: #0000DE;
+	background-color: #FFFFFF;
+}
+
+.hot-news-buttons__slidebar {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	height: auto;
+	width: auto;
+
+	margin-left: 30px;
+}
+
+.slider-circle {
+	width: 8px;
+	height: 8px;
+	margin: 3px;
+	background-color: #C3D1E1;
+
+	border-radius: 50%;
+}
+
+.slider-circle:hover {
+	background-color: #0000DE;
+}
+
+/* background*/
+
+.background {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.backfround__header {
+	position: relative;
+	height: 170px;
+}
+
+.background__hot-news {
+	position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.background__left-half {
+	height: 100%;
+}
+
+.background__middle{
+	height: 100px;
+}
+
+.background__happy-man {
+
+}
+
+.background__right-half {
+	height: 100%;
 }
