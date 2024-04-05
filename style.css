@@ -344,19 +344,25 @@ header {
 	bottom: 0;
 	right: 0;
 	z-index: -1;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	align-items: end
+}
+
+.background__spots {
+	margin: auto;
+	bottom: 10hv;
 }
 
 .background__left-spot{
+ margin-left: 10vh;
 
 }
 
 .background__right-spot {
-
+	margin-right: 10vh;
 }
 
 .background__happy-man {
-
+	height: 365px;
 }
