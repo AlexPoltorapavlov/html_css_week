@@ -588,3 +588,13 @@ main {
 	background-position: left 30px center;
 }
 
+.calc-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.calc h1 {
+	font-size: 34px;
+	font-weight: lighter;
+}
