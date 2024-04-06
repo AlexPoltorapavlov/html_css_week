@@ -378,6 +378,10 @@ main {
 	max-width: 1275px;
 }
 
+.recommend {
+	margin-bottom: 180px;
+}
+
 .recommend h1 {
 	font-size: 34px;
 	font-weight: lighter;
@@ -525,5 +529,62 @@ main {
 .recommend-content__img-not-close img {
 	position: absolute;
 	max-width: 80%;
-
 }
+
+/* finance calc */
+
+.calc {
+	display: flex;
+	flex-direction: column;
+	border-radius: 64px 6px 6px 64px;
+	padding: 0 5% 5% 5%;
+	max-width: 1370px;;
+	background-color: #F0F4F8;
+}
+
+.calc__choice-bg {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.calc__choice {
+	position: relative;
+	top: -50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.calc__choice a {
+	display: flex;
+	align-items: center;
+	width: auto;
+	font-size: 27px;
+	font-weight: lighter;
+	flex: 1;
+	padding: 36px 36px 36px 136px;
+	border-radius: 10px;
+	text-decoration: none;
+	background-color: #0000DE;
+	color: #FFFFFF;
+}
+
+.calc__invest {
+	background-image: url(sources/invest-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: left 30px center;
+	margin-right: 15px;
+}
+
+.calc__inst-plan {
+	background-image: url(sources/trolley.svg);
+	background-repeat: no-repeat;
+	background-position: left 30px center;
+}
+
