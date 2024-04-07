@@ -668,3 +668,72 @@ main {
 	padding: 22px;
 	border-radius: 28px 0 28px 0;
 }
+
+/* possibilities */
+
+.possibilities {
+	display: flex;
+	flex-direction: column;
+	margin: 80px;
+}
+
+.psb-content__large-grid {
+	display: grid;
+	grid-template-rows: 2fr 3fr 3fr 1fr 2fr;
+	grid-template-columns: 40fr 40fr 7fr 40fr;
+	gap: 0px;
+	height: fit-content;
+}
+
+.psb-content__small-grid {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0px;
+}
+
+.psb-content__desc-with-bg {
+	display: flex;
+	font-size: 16px;
+	padding-left: 90px;
+	align-items: center;
+	justify-content: flex-start;
+
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.psb-content__accumulate {
+	background-image: url(sources/coin.svg);
+	grid-area: 1 / 1 / 1 / 1;
+}
+
+.psb-content__earn {
+	background-image: url(sources/wallet.svg);
+	grid-area: 2 / 1 / 2 / 1;
+}
+
+.psb-content__invest {
+	background-image: url(sources/chartbar.svg);
+	grid-area: 3 / 1 / 3 / 1;
+}
+
+.psb-content__safety {
+	background-image: url(sources/shieldShevron.svg);
+	grid-area: 5 / 1 / 5 / 1;
+}
+
+.psb-content__desc {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 18px;
+	font-weight: lighter;
+	margin: 0;
+}
+
+.psb-content__desc-1-3 {
+	grid-area: 1 / 2 / 1 / 2;
+}
+
+}
