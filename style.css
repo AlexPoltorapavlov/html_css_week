@@ -480,11 +480,10 @@ main {
 	justify-content: space-between;
 }
 
-.digital-info__important-info {
+.psb-content__digital-info.digital-info__important-info {
 	color: #355DFB;
-	font-size: 36px;
 	font-weight: bold;
-	margin-bottom: 14px;
+
 }
 
 .recommend-content__desc {
@@ -677,9 +676,13 @@ main {
 	margin: 80px;
 }
 
+.psb-content {
+	height: fit-content;
+}
+
 .psb-content__large-grid {
 	display: grid;
-	grid-template-rows: 2fr 3fr 3fr 1fr 2fr;
+	grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
 	grid-template-columns: 40fr 40fr 7fr 40fr;
 	gap: 0px;
 	height: fit-content;
@@ -701,6 +704,7 @@ main {
 
 	background-repeat: no-repeat;
 	background-position: left center;
+	
 }
 
 .psb-content__accumulate {
@@ -723,6 +727,23 @@ main {
 	grid-area: 5 / 1 / 5 / 1;
 }
 
+.psb-content__invest-with-result {
+	grid-area: 1 / 4 / 2 / 5;
+}
+
+.psb-content__func-desc-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0;
+
+	grid-area: 4 / 4 / 5 / 5;
+}
+
+.psb-content__stock-market {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
 .psb-content__desc {
 	display: flex;
 	align-items: center;
@@ -737,28 +758,37 @@ main {
 }
 
 .psb-content__func {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: grid;
+	grid-template-rows: 2fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-area: 2 / 2 / 4 / 3;
 	align-items: flex-end;
+	gap: 6px;
 
 	background-image: url(sources/psb-content__func-bg.svg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 
-	height: fit-content;
+	height: 100%;
 }
 
 .psb-content__func-desc {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+	grid-area: 4 / 2 / 4 / 2;
+}
+
+.psb-content__func-desc p {
+	display: block;
+	width: fit-content;
+	font-size: 14px;
 }
 
 .psb-content__column {
 	border-radius: 18px 0 18px 0;
+	width: 100px;
 }
 
 .psb-content__column-1 {
@@ -778,9 +808,36 @@ main {
 
 .psb-content__digital-info {
 	margin: 1px;
+	font-size: 20px;
+	color: #7C83A1;
+}
+
+.psb-content__digital-info span {
+	font-size: 30px;
 }
 
 .psb-content__desc-column {
 	font-size: 14px;
 	margin: 1px;
+}
+
+.psb-content__important-desc {
+	color: #355DFB;
+	font-weight: bold;
+}
+
+.psb-content__return-cash {
+	grid-area: 5 / 2 / 6 / 3;
+	align-self: flex-end;
+}
+
+.psb-content__desc-with-small-bg {
+	padding-left: 0;
+	margin: 0;
+}
+
+.func-desc-bg {
+	height: 14px;
+	width: 14px;
+	border-radius: 7px;
 }
