@@ -480,10 +480,10 @@ main {
 	justify-content: space-between;
 }
 
-.psb-content__digital-info.digital-info__important-info {
+.digital-info__important-info {
 	color: #355DFB;
 	font-weight: bold;
-
+	font-size: 36px;
 }
 
 .recommend-content__desc {
@@ -668,7 +668,7 @@ main {
 	border-radius: 28px 0 28px 0;
 }
 
-/* possibilities */
+/* possibilities (large-grid)*/
 
 .possibilities {
 	display: flex;
@@ -682,7 +682,7 @@ main {
 
 .psb-content__large-grid {
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr 0.5fr 1.1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-template-columns: 40fr 40fr 7fr 40fr;
 	gap: 0px;
 	height: fit-content;
@@ -698,7 +698,8 @@ main {
 .psb-content__desc-with-bg {
 	display: flex;
 	font-size: 16px;
-	padding-left: 90px;
+	padding: 10px 10px 0px 90px;
+	margin: 0;
 	align-items: center;
 	justify-content: flex-start;
 
@@ -829,7 +830,6 @@ main {
 
 .psb-content__return-cash {
 	grid-area: 5 / 2 / 6 / 3;
-	align-self: flex-end;
 }
 
 .psb-content__desc-with-small-bg {
@@ -866,4 +866,59 @@ main {
 .psb-content__func-wave {
 	grid-area: 2 / 4 / 4 / 5;
 	align-self: right;
+}
+
+/* possibilities (small-grid)*/
+
+.psb-content__small-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.invest-products-button {
+ height: fit-content;
+ padding: 14px;
+ border-radius: 20px 0 20px 0;
+ grid-area: 2 / 1 / 3 / 2;
+}
+
+.psb-content__desc-regular {
+	font-size: 16px;
+}
+
+.psb-content__desc-regular-r-estate {
+	grid-area: 1 / 2 / 2 / 3;
+	align-self: flex-end;
+}
+
+.psb-small-grid__desc-for-r-estate {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.psb-small-grid__range-block {
+	display: flex;
+	flex-direction: row;
+}
+
+.psb-content__grey-desc {
+	color: #7C83A1;
+}
+
+
+.psb-content__desc-regular-nur-finance{
+	grid-area: 1 / 3 / 2 / 4;
+	align-self: flex-end;
+}
+
+.psb-content__small-grid input[type="range"]{
+	width: 70%;
+}
+
+.nur-finance-range-block {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+.psb-content__desc-regular.psb-content__blue-desc {
+	color: #355DFB;
 }
