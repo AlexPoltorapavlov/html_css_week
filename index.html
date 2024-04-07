@@ -193,17 +193,21 @@
 			</div>
 			<h1>Рассчитай свои <br>накопления и доход</h1>
 			<div class="calc-content">
-				<div class="calc__ranges">
-					<div>
-						<p>Сумма вклада</p>
-						<p class="bold">1 000 000 ₽</p>
+				<div class="calc-ranges">
+					<div class="calc-ranges__block">
+						<div class="calc-ranges__info-block">
+							<p>Сумма вклада</p>
+							<p class="bold">1 000 000 ₽</p>
+						</div>
+						<input type="range" min="0" max="3000000" value="1000000">
 					</div>
-					<input type="range" min="0" max="3000000" value="1000000">
-					<div>
-						<p>Срок инвестирования</p>
-						<p class="bold">24 месяца</p>
+					<div class="calc-ranges__block">
+						<div class="calc-ranges__info-block">
+							<p>Срок инвестирования</p>
+							<p class="bold">24 месяца</p>
+						</div>
+						<input type="range" min="0" max="36" value="24">
 					</div>
-					<input type="range" min="0" max="36" value="24">
 					<p>Порядок выплаты дохода</p>
 					<div>
 						<label>
@@ -215,7 +219,7 @@
 					</div>
 					<div>
 						<p>Пополнение вклада</p>
-						<p class="bold">30 000 ₽ <span>/в месяц</span></p>
+						<p class="bold">30 000 ₽ <span class="not-bold">/в месяц</span></p>
 					</div>
 					<input type="range" min="0" max="120000" value="30000">
 				</div>
@@ -223,19 +227,19 @@
 					<img src="sources/calc__func.svg" alt="">
 				</div>
 				<div class="calc__summary">
-					<div>
-						<p>12,5%</p>
-						<p>Доходность</p>
+					<div class="digital-info__block calc__info-block">
+						<span class="digital-info__important-info">12,5%</span>
+						<p class="digital-info__desc">Доходность</p>
 					</div>
-					<div>
-						<p>282 366 ₽</p>
-						<p>Сумма доходности</p>
+					<div class="digital-info__block calc__info-block">
+						<span class="digital-info__important-info">282 366 ₽</span>
+						<p class="digital-info__desc">Сумма доходности</p>
 					</div>
-					<div>
-						<p>1 282 366 ₽</p>
-						<p>Итоговая сумма</p>
+					<div class="digital-info__block calc__info-block">
+						<span class="digital-info__important-info">1 282 366 ₽</span>
+						<p class="digital-info__desc">Итоговая сумма</p>
 					</div>
-					<a href="#">Инвестировать</a>
+					<a href="https://www.youtube.com/watch?v=c75MrTyjxqs" class="hot-button invest-button calc__invest-button">Инвестировать</a>
 				</div>
 			</div>
 	</section>
