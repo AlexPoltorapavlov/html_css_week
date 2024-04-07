@@ -991,3 +991,59 @@ main {
 	right: 0;
 	transform: translateX(50%);
 }
+
+/* usefull-info */
+
+.usefull-info {
+	padding: 60px;
+}
+
+.usefull-info h1 {
+	font-size: 34px;
+	font-weight: 100;
+}
+
+.usefull-info h2 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.usefull-info h3 {
+	font-size: 14px;
+	color: #79A6C3;
+}
+
+.usefull-info-blocks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 14px;
+}
+
+.usefull-info-block {
+	position: relative;
+	background-color: #F0F4F8;
+	padding: 26px;
+	border-radius: 10px;
+}
+
+.usefull-info-block a {
+	display: block;
+	padding-left: 36px;
+	color: #0000DE;
+	font-weight: bolder;
+	font-size: 16px;
+	margin-bottom: 30px;
+	text-decoration: none;
+
+	background-image: url(sources/caret-right.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.usefull-info-block img {
+	position: absolute;
+	margin: 16px;
+	right: 0;
+	top: 0
+}
