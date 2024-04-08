@@ -2,7 +2,15 @@
 html {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
+	box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
 
 a {
 	font-size: 14px;
@@ -32,6 +40,7 @@ header {
 }
 
 .header-down-nav {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -76,7 +85,7 @@ header {
 	margin-right: 24px;
 }
 
-.header-nav__link.contacts {
+.header-nav__link .contacts {
 	background-image: url(sources/map.svg);
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -128,8 +137,8 @@ header {
 .header-down__buttons {
 	align-items: center;
 	display: flex;
-	flex-direction: row;
 	flex: 1;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -138,7 +147,8 @@ header {
 }
 
 .nav__buttons {
-	align-items: center	;
+	align-items: center;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
@@ -158,6 +168,7 @@ header {
 	background: #0000DE;
 	border-radius: 20px 0;
 	border: none;
+	box-sizing: border-box;
 	height: 100%;
 	padding: 14px 0;
 	width: 100%;
@@ -226,6 +237,7 @@ header {
 
 .hot-buttons {
 	align-items: center	;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
 	height: fit-content;
@@ -240,6 +252,7 @@ header {
 	background: #0000DE;
 	border-radius: 20px 0;
 	border: none;
+	box-sizing: border-box;
 	font-size: 16px;
 	margin-right: 20px;
 	padding: 14px 14px;
@@ -534,6 +547,7 @@ main {
 	align-items: center;
 	background-color: #0000DE;
 	border-radius: 10px;
+	box-sizing: border-box;
 	color: #FFFFFF;
 	display: flex;
 	flex: 1;
@@ -585,6 +599,7 @@ main {
 .calc__summary {
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 120px 10px;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	height: fit-content;
@@ -630,6 +645,7 @@ main {
 
 .calc__invest-button {
 	border-radius: 28px 0 28px 0;
+	box-sizing: border-box;
 	margin-top: 7px;
 	padding: 22px;
 	width: fit-content;
@@ -1120,6 +1136,7 @@ footer {
 .search-input {
 	border-radius: 6px;
 	border: none;
+	box-sizing: border-box;
 	color: #79A6C3;
 	height: 48px;
 	padding: 15px 60px;
