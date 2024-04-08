@@ -3,6 +3,7 @@ stages:
   - lint
 before_script:
   - npm install -g htmlhint csslint
+  - csslint --config=.csslint .
 html_job:
   stage: lint
   only:
