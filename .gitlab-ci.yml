@@ -8,7 +8,7 @@ html_job:
   only:
     - merge_requests
   script:
-    - html *.html
+    - htmlhint *.html
 css_job:
   stage: lint
   only:
