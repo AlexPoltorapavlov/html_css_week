@@ -437,8 +437,8 @@ h2 {
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 32px;
   padding: 40px;
+  padding-top: 32px;
 }
 
 .recommend-content__img {
@@ -625,7 +625,8 @@ h2 {
 }
 
 .calc-ranges input[type="range"]::-webkit-slider-track {
-  border: none;  background-color: #355DFB;
+  background-color: #355DFB;
+  border: none;
   border-radius: 3px;
 }
 
