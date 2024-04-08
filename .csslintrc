@@ -1,3 +1,13 @@
 {
-  "font-sizes": false
+  "ignore": [
+    "adjoining-classes",
+		"box-model",
+		"font-sizes",
+		"gap",
+		"box-sizing"
+  ],
+  "warnings": [
+  ],
+  "errors": [
+  ]
 }
