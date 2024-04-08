@@ -9,9 +9,9 @@ html_job:
     - merge_requests
   script:
     - html *.html
-  css_job:
-    stage: lint
-    only:
-      - merge_requests
-    script:
-      - csslint *.css
+css_job:
+  stage: lint
+  only:
+    - merge_requests
+  script:
+    - csslint *.css
