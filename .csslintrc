@@ -3,7 +3,6 @@
     "adjoining-classes",
 		"box-model",
 		"font-sizes",
-		"gap",
 		"box-sizing"
   ],
   "warnings": [
